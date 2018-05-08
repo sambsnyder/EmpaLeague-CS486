@@ -36,8 +36,10 @@ This project makes use of the Empatica E4 wristband.
 
 ## Misc.
 - The txt file containing the heart rate values and timestamps is located on the sdcard under the folder 
-called "test", the file is called "savedFile.txt". 
+    called "test", the file is called "savedFile.txt". 
 - When the threshold is calculated it will be printed to the console on Android Studio.
 - When an increase in HR is detected the following message will be printed to console: 
-"Increase in heart Rate confirmed: Music START"
+    "Increase in heart Rate confirmed: Music START"
 - When an IBI value is recieved "Recieved" is printed to the console.
+- Should not need the APK at all to run the project however it is included anyways.
+
