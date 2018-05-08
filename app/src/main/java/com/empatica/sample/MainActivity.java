@@ -315,12 +315,10 @@ public class MainActivity extends AppCompatActivity implements EmpaDataDelegate,
             if(songStart){
                 songStart=false;
                 hrCSV[i]+=(";song start"); // Concatenate to the end of the string a marker for the song stopping
-                System.out.println(hrCSV[i].toString());
             }
             if(songStop){
                 songStop=false;
                 hrCSV[i]+=(";song stop"); // Concatenate to the end of the string a marker for the song stopping
-                System.out.println(hrCSV[i].toString());
             }
             // Storing heart rate into the array list for SMA
             list.set(counter, heart_rate);
@@ -380,7 +378,6 @@ public class MainActivity extends AppCompatActivity implements EmpaDataDelegate,
         // This allows us to start replacing the values at the beginning of the list
         // aka replacing the oldest HR data with newest ones
         if(counter >= 15){
-            System.out.println("LIST FILLED!!!!!!");
             // This boolean is set to true in order to know when to calculate the threshold for the first time
             listFilledOnce = true;
             counter = 0;
@@ -389,7 +386,7 @@ public class MainActivity extends AppCompatActivity implements EmpaDataDelegate,
         // I make sure the list is full and the first value is not 0
         if(listFilledOnce && list.get(0)>f){
             simpleMovingAverage(list);
-            System.out.println("SMA = "+simple_moving_average);
+            
         }
     }
     // method used to write to the new file on the device
@@ -456,10 +453,6 @@ public class MainActivity extends AppCompatActivity implements EmpaDataDelegate,
     public float simpleMovingAverage(ArrayList<Float> list){
         // calculating the average
         simple_moving_average = average(list);
-        // if the threshold has been reached
-        if(simple_moving_average>threshold && threshold  >f){
-            System.out.println("Threshold is:" +threshold+"THRESHOLD REACHED SMA --------------------------------------------------");
-        }
         // return
         return simple_moving_average;
 
