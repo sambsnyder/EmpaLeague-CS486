@@ -40,3 +40,4 @@ called "test", the file is called "savedFile.txt".
 - When the threshold is calculated it will be printed to the console on Android Studio.
 - When an increase in HR is detected the following message will be printed to console: 
 "Increase in heart Rate confirmed: Music START"
+- When an IBI value is recieved "Recieved" is printed to the console.
