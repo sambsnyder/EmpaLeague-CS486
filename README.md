@@ -35,6 +35,7 @@ This project makes use of the Empatica E4 wristband.
 6. Run the project.
 
 ## Misc.
+- MIGHT HAVE TO REMOVE APK FOLDER BEFORE RUN.
 - The txt file containing the heart rate values and timestamps is located on the sdcard under the folder 
     called "test", the file is called "savedFile.txt". 
 - When the threshold is calculated it will be printed to the console on Android Studio.
