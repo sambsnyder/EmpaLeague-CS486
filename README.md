@@ -7,9 +7,9 @@ This project makes use of the Empatica E4 wristband.
 - This project makes use of the sample project by Empatica posted here:
  https://github.com/empatica/empalink-sample-project-android
 - It initializes the EmpaLink library with your API key pertaining to your wristband.
-- If the previous step is successful, it starts scanning for Empatica devices, till it finds one that can be used with 
+- If the previous step is successful, it starts scanning for Empatica device untill it finds one that can be used with 
     the API key you inserted in the code.
-- When such a device has been found, the app connects to the devices and streams data for 25 minutes, then it disconnects.
+- When such a device has been found, the app connects to the device and streams data for 25 minutes, then it disconnects.
 
 ## ON RUN
 - The application searches for the E4 device.
